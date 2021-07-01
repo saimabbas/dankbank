@@ -4,7 +4,6 @@ import Head from "next/head";
 import Footer from "../components/footer/footer";
 import styled from "styled-components";
 import { MdEdit } from "react-icons/md";
-const Settings = () => {
   const HomeCardsSection = styled.div`
     width: 100%;
     padding: 3.5rem;
@@ -185,6 +184,8 @@ const Settings = () => {
       padding: 1rem 5rem;
     }
   `;
+const Settings = () => {
+
   return (
     <div className="home">
       <Head>

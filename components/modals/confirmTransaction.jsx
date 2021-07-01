@@ -3,7 +3,6 @@ import styled from "styled-components";
 import MainWhiteBtn from "../mainWhiteBtn/mainWhiteBtn";
 import MainPinkBtn from "../mainPinkBtn/mainPinkBtn";
 
-const ConfirmTransaction = () => {
   const ConfirmTransaction = styled.div`
     width: 100vw;
     height: 100vh;
@@ -114,6 +113,8 @@ const ConfirmTransaction = () => {
       margin: 1.5rem 0;
     }
   `;
+const ConfirmTransactionS = () => {
+
   return (
     <>
       <ConfirmTransaction>
@@ -153,4 +154,4 @@ const ConfirmTransaction = () => {
   );
 };
 
-export default ConfirmTransaction;
+export default ConfirmTransactionS;

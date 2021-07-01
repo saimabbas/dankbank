@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 
-const Failure = () => {
   const Failure = styled.div`
     width: 100vw;
     height: 100vh;
@@ -32,6 +31,8 @@ const Failure = () => {
       }
     }
   `;
+const FailureS = () => {
+
   return (
     <>
       <Failure>
@@ -44,4 +45,4 @@ const Failure = () => {
   );
 };
 
-export default Failure;
+export default FailureS;

@@ -4,86 +4,8 @@ import Head from "next/head";
 import HomeGridCard from "../components/homeGridCard/homeGridCard";
 import HowItWorksCard from "../components/howItWorksCard/howItWorksCard";
 import Footer from "../components/footer/footer";
-import GlobalStyle from "../theme/globalStyles";
 import styled from "styled-components";
-const Home = () => {
-  const HeroSection = styled.div`
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 3.5rem;
-    @media screen and (max-width: 450px) {
-      padding: 1.5rem;
-    }
-    @media screen and (max-width: 1024px) {
-      height: unset;
-    padding: 2.5rem;
-    }
-  `;
-  const HeroSectionBox = styled.div`
-    width: 100%;
-    height: 100%;
-    background-color: #fff;
-    border: 0.5rem solid #000;
-    padding: 2.5rem;
-    background-image: url("../../assets/Lines.png");
-    background-position: center;
-    background-repeat: repeat;
-    background-size: cover;
-    @media screen and (max-width: 450px) {
-      padding: 1.5rem;
-      border: 0.35rem solid #000;
-    }
-  `;
-  const HeroBoxContent = styled.div`
-    width: 100%;
-    height: 90%;
-    display: flex;
-    @media screen and (max-width: 1024px) {
-      margin: 5rem 0 0 0;
-      align-items: flex-start;
-    }
-    @media screen and (max-width: 450px) {
-      flex-direction: column-reverse;
-      margin: 0;
-    }
-  `;
-  const HeroContentLeft = styled.div`
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-evenly;
-    padding: 3rem 0 3rem 4rem;
-    @media screen and (max-width: 1024px) {
-      padding: 3rem 0 3rem 0rem;
-    }
-    @media screen and (max-width: 450px) {
-      width: 100%;
-      align-items: center;
-      padding: 0rem 0 2rem 0rem;
-    }
-    & h1 {
-      font-size: 8.5rem;
-      font-weight: 800;
-      margin: 0;
-      text-transform: uppercase;
-      line-height: 7.5rem;
-      font-family: "Teko", "Prompt", sans-serif;
-      @media screen and (max-width: 1024px) {
-        font-size: 6.25rem;
-        line-height: 6.5rem;
-      }
-      @media screen and (max-width: 450px) {
-        font-size: 5rem;
-        line-height: 5rem;
-        text-align: center;
-      }
-    }
-  `;
+
   const HeroContentRightDotted = styled.button`
     padding: 1.25rem 5rem;
     border: 0.2rem solid #000;
@@ -311,13 +233,15 @@ const Home = () => {
   const HeaderBox = styled.div`
     padding: 5rem;
     width: 100%;
-    @media screen and (max-width: 450px) {
-      padding: 1.5rem;
-    }
     @media screen and (max-width: 1050px) {
       padding: 2.5rem;
     }
+    @media screen and (max-width: 450px) {
+      padding: 1.5rem;
+    }
   `;
+const Home = () => {
+
   return (
     <div className="home">
       <Head>

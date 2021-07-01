@@ -5,7 +5,7 @@ import HowItWorksCard from "../components/howItWorksCard/howItWorksCard";
 import Footer from "../components/footer/footer";
 import GlobalStyle from "../theme/globalStyles";
 import styled from "styled-components";
-const Home = () => {
+  
   const HeroSection = styled.div`
     width: 100%;
     height: 100vh;
@@ -15,15 +15,14 @@ const Home = () => {
     align-items: center;
     justify-content: center;
     padding: 3.5rem;
-    @media screen and (max-width: 450px) {
-      padding: 1.5rem;
-    }
     @media screen and (max-width: 1024px) {
       height: unset;
       padding: 2.5rem;
     }
+    @media screen and (max-width: 450px) {
+      padding: 1.5rem;
+    }
   `;
-
   const HeroSectionBox = styled.div`
     width: 100%;
     height: 100%;
@@ -34,15 +33,14 @@ const Home = () => {
     background-position: center;
     background-repeat: repeat;
     background-size: cover;
+    @media screen and (max-width: 1024px) {
+      padding: 2.5rem;
     @media screen and (max-width: 450px) {
       padding: 1.5rem;
       border: 0.35rem solid #000;
     }
-    @media screen and (max-width: 1024px) {
-      padding: 2.5rem;
     }
   `;
-
   const HeroBoxContent = styled.div`
     width: 100%;
     height: 90%;
@@ -192,7 +190,6 @@ const Home = () => {
     width: 100%;
     border: 0.25rem solid #000;
   `;
-
   const HomeCSHeader = styled.div`
     width: 100%;
     padding: 5rem;
@@ -208,7 +205,6 @@ const Home = () => {
       padding: 2.5rem;
     }
   `;
-
   const HomeCSHeaderLeft = styled.div`
     width: 65%;
     @media screen and (max-width: 450px) {
@@ -223,7 +219,6 @@ const Home = () => {
       font-size: 1.75rem;
     }
   `;
-
   const HomeCSHeaderRight = styled.div`
     width: 35%;
     @media screen and (max-width: 450px) {
@@ -250,7 +245,6 @@ const Home = () => {
       }
     }
   `;
-
   const HomeCSGrigContainer = styled.div`
     padding: 5rem;
     @media screen and (max-width: 450px) {
@@ -260,7 +254,6 @@ const Home = () => {
       padding: 5rem 2.5rem;
     }
   `;
-
   const HomeGridBox = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -276,7 +269,6 @@ const Home = () => {
       grid-template-rows: auto;
     }
   `;
-
   const HomeSeeAll = styled.div`
     width: 100%;
     display: flex;
@@ -319,7 +311,6 @@ const Home = () => {
       }
     }
   `;
-
   const HowitWorksContainer = styled.div`
     max-width: 1800px;
     margin: 0 auto;
@@ -335,7 +326,6 @@ const Home = () => {
       }
     }
   `;
-
   const HitPCP = styled.p`
     font-size: 2rem;
     text-align: center;
@@ -358,7 +348,6 @@ const Home = () => {
       margin: 0 auto;
     }
   `;
-
   const HiwBox = styled.div`
     width: 100%;
     margin: 10rem 0;
@@ -371,6 +360,8 @@ const Home = () => {
       margin: 5rem 0;
     }
   `;
+const Home = () => {
+
   return (
     <div className="home">
       <HeroSection>

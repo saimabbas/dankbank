@@ -9,7 +9,6 @@ interface BioProps {
   memePrice: string;
   memeMarketCap: string;
 }
-const Holdings: FC<BioProps> = (props): JSX.Element => {
   const GcHead = styled.div`
     display: flex;
     align-items: center;
@@ -60,6 +59,8 @@ const Holdings: FC<BioProps> = (props): JSX.Element => {
   const HomeGridCard = styled.div`
   cursor: pointer;
   `
+const Holdings: FC<BioProps> = (props): JSX.Element => {
+
   return (
       <HomeGridCard>
         <GcHead>

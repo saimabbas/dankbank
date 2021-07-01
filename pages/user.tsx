@@ -7,7 +7,6 @@ import Footer from "../components/footer/footer";
 import GlobalStyle from "../theme/globalStyles";
 import styled from "styled-components";
 import TradeHistoryCard from "../components/TradeHistory/tradeHistory";
-const User = () => {
   const HeroSection = styled.div`
     width: 100%;
     height: 100vh;
@@ -219,55 +218,6 @@ const User = () => {
       }
     }
   `;
-  const HowitWorksContainer = styled.div`
-    max-width: 1800px;
-    margin: 0 auto;
-    width: 100%;
-    & h1 {
-      font-size: 6.5rem;
-      text-align: center;
-      font-family: "Teko", "Prompt", sans-serif;
-      margin: 3.5rem 0;
-      @media screen and (max-width: 450px) {
-        font-size: 4.5rem;
-        margin: 0.5rem 0 0 0;
-      }
-    }
-  `;
-  const HitPCP = styled.p`
-    font-size: 2rem;
-    text-align: center;
-    display: block;
-    @media screen and (max-width: 1024px) {
-      display: none;
-    }
-  `;
-  const HitPCT = styled.p`
-    font-size: 2rem;
-    text-align: center;
-    display: none;
-    @media screen and (max-width: 1024px) {
-      display: block;
-    }
-    @media screen and (max-width: 450px) {
-      font-size: 1.75rem;
-      text-align: center;
-      width: 90%;
-      margin: 0 auto;
-    }
-  `;
-  const HiwBox = styled.div`
-    width: 100%;
-    margin: 10rem 0;
-    display: flex;
-    align-items: flex-start;
-    padding: 0 7.5%;
-    flex-wrap: wrap;
-    justify-content: center;
-    @media screen and (max-width: 1024px) {
-      margin: 5rem 0;
-    }
-  `;
   const HeaderBox = styled.div`
     padding: 5rem;
     width: 100%;
@@ -354,7 +304,7 @@ const User = () => {
       margin: 0;
     }
   `;
-  let MainWhiteBtn = styled.button`
+  const MainWhiteBtn = styled.button`
     border: 0.2rem solid #000;
     font-size: 1.5rem;
     border-radius: 1rem;
@@ -422,7 +372,6 @@ const User = () => {
       padding: 0 2.5rem 5rem 2.5rem;
     }
   `;
-
   const TradeHistoryBox = styled.div`
     margin: 2.5rem 0 0 0;
     width: 100%;
@@ -444,6 +393,8 @@ const User = () => {
       background-color: #c3c4d3;
     }
   `;
+const User = () => {
+
   return (
     <div className="home">
       <Head>

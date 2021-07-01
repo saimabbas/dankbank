@@ -8,7 +8,6 @@ import GlobalStyle from "../theme/globalStyles";
 import styled from "styled-components";
 import { FaPlay } from "react-icons/fa";
 import MemeLord from "../components/memeLords/memeLords";
-const Home = () => {
   const HeroSection = styled.div`
     width: 100%;
     overflow: hidden;
@@ -17,12 +16,12 @@ const Home = () => {
     align-items: center;
     justify-content: center;
     padding: 3.5rem 3.5rem 20rem 3.5rem;
-    @media screen and (max-width: 450px) {
-      padding: 1.5rem 1.5rem 10rem 1.5rem;
-    }
     @media screen and (max-width: 1024px) {
       height: unset;
     padding: 2.5rem 2.5rem 20rem 2.5rem;
+    }
+    @media screen and (max-width: 450px) {
+      padding: 1.5rem 1.5rem 10rem 1.5rem;
     }
   `;
   const HeroSectionBox = styled.div`
@@ -333,6 +332,8 @@ const Home = () => {
       color: #000;
     }
   `;
+const Home = () => {
+
   return (
     <div className="home">
       <Head>How it works</Head>
@@ -375,6 +376,7 @@ const Home = () => {
             Seal live a made never blonde a invitation a the refute. I by makers
             math were we would have size.
           </AboutTP>
+          
           <ThreeBoxContainer>
             <div>
               <main>
@@ -418,6 +420,7 @@ const Home = () => {
               </span>
             </div>
           </ThreeBoxContainer>
+          
           <HIWBoxH>Resident Memelords</HIWBoxH>
           <AboutPP>
             We at <span>Dank Bank</span> are grateful to call such meme icons as

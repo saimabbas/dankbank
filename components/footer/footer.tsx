@@ -75,7 +75,6 @@ const FooterTopCard = styled.div`
     }
   }
 `;
-
 const FooterBottom = styled.div`
   display: flex;
   align-items: center;
@@ -110,7 +109,6 @@ const FooterTopCardBox = styled.div`
     }
   }
 `;
-
 const FooterSocialIcons = styled.div`
   display: flex;
   align-items: center;

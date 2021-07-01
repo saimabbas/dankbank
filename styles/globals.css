@@ -8,6 +8,15 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+:root 
+{
+  font-size: 10px;
+  --mainblue: #1022dc;
+--purplishblue: #5c52e9;
+--mainpink: #e553ec;
+--mainferozi: #37BAEB;
+transition: 0.35s;
+}
 a {
   color: inherit;
   text-decoration: none;

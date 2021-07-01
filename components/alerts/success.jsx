@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 
-const Success = () => {
   const Success = styled.div`
     width: 100vw;
     height: 100vh;
@@ -32,6 +31,8 @@ const Success = () => {
       }
     }
   `;
+const SuccessS = () => {
+
   return (
     <>
       <Success>
@@ -44,4 +45,4 @@ const Success = () => {
   );
 };
 
-export default Success;
+export default SuccessS;

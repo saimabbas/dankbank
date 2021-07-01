@@ -2,7 +2,6 @@ import React from "react";
 import { MdArrowDropDown, MdArrowDropUp } from "react-icons/md";
 import styled from "styled-components";
 
-const positive = () => {
   const Positive = styled.div`
     display: flex;
     align-items: center;
@@ -21,6 +20,8 @@ const positive = () => {
       margin: 0;
     }
   `;
+const positive = () => {
+
   return (
     <Positive>
       <MdArrowDropUp /> <p> 1.5%</p>

@@ -35,7 +35,7 @@ const HeaderContainerMob = styled.div`
   background-color: #fff;
   position: relative;
   @media screen and (max-width: 1024px) {
-    padding: 1rem;
+    padding: 1rem 1.75rem;
   }
   @media screen and (max-width: 750px) {
     border: 0.35rem solid #000;
@@ -90,7 +90,6 @@ const HeaderMobile = styled.div`
   border: 0.35rem solid #000;
   border-top: 0rem solid #000;
 `;
-
 const HeaderTextBoxMob = styled.div`
   width: 100%;
   display: flex;
@@ -104,7 +103,6 @@ const HeaderTextBoxMob = styled.div`
     color: white;
   }
 `;
-
 const HeaderWhiteBtnMob = styled.button`
     background-color: var(--mainblue);
     color: white;
@@ -116,7 +114,6 @@ const HeaderWhiteBtnMob = styled.button`
     padding: 1.1rem 2rem;
     border: 0.2rem solid #fff;
 `;
-
 const HeaderPinkBtnMob = styled.button`
     margin: 2rem auto 0 auto;
     width: 70%;

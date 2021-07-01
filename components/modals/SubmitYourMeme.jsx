@@ -3,7 +3,6 @@ import styled from "styled-components";
 import MainWhiteBtn from "../mainWhiteBtn/mainWhiteBtn";
 import MainPinkBtn from "../mainPinkBtn/mainPinkBtn";
 
-const SubmitYourMeme = () => {
   const SubmitYourMeme = styled.div`
     width: 100vw;
     height: 100vh;
@@ -195,6 +194,8 @@ const SubmitYourMeme = () => {
       }
     }
   `;
+
+const SubmitYourMemeS = () => {
   return (
     <>
       <SubmitYourMeme>
@@ -253,4 +254,4 @@ const SubmitYourMeme = () => {
   );
 };
 
-export default SubmitYourMeme;
+export default SubmitYourMemeS;

@@ -12,6 +12,8 @@ import Success from "../components/alerts/success";
 import Failure from "../components/alerts/failure";
 import ConfirmTransaction from "../components/modals/confirmTransaction";
 import SubmitYourMeme from "../components/modals/submitYourMeme";
+import ModalM from "../components/modals/modalM";
+import ModalC from "../components/modals/modalC";
 import Footer from "../components/footer/footer";
 import { setTimeout } from "timers";
 
@@ -246,6 +248,7 @@ const MDRBottom = styled.div`
   border-top: 0.25rem solid #000;
   & button {
     width: 50%;
+    margin-right: 0;
     @media screen and (max-width: 1050px) {
       width: 80%;
       margin-right: 0;
@@ -302,6 +305,9 @@ const MemeDetailsUpperPortion = styled.div`
   @media screen and (max-width: 1050px) {
     padding: 2.5rem;
   }
+  @media screen and (max-width: 450px) {
+    padding: 1.5rem;
+  }
 `;
 const MemeLeftConent = styled.div`
   width: 70%;
@@ -319,40 +325,45 @@ const Graph = styled.div`
     width: 100%;
   }
 `;
+
 const memeDetail = () => {
   const [open, setOpen] = useState(true);
   const [progress, setProgress] = useState(false);
   const [success, setSuccess] = useState(false);
   const [failure, setFailure] = useState(false);
   const [confirmTransaction, SetConfirmTransaction] = useState(false);
-  const [submitYourMeme, setSubmitYourMeme] = useState();
-
+  const [submitYourMeme, setSubmitYourMeme] = useState(false);
+  const [modalM, setModalM] = useState(false);
+  const [modalC, setModalC] = useState(false);
   const handleProgress = () => {
     setProgress(true);
     document.body.style.overflow = "hidden";
   };
-
   const handleSuccess = () => {
     setSuccess(true);
     document.body.style.overflow = "hidden";
   };
-
   const handleFailure = () => {
     setFailure(true);
     document.body.style.overflow = "hidden";
   };
-
   const handleConfirmTransaction = () => {
     false;
     SetConfirmTransaction(true);
     document.body.style.overflow = "hidden";
   };
-
   const handleSubmitYourMeme = () => {
     setSubmitYourMeme(true);
     document.body.style.overflow = "hidden";
   };
-
+  const handleModalM = () => {
+    setModalM(true);
+    document.body.style.overflow = "hidden";
+  };
+  const handleModalC = () => {
+    setModalC(true);
+    document.body.style.overflow = "hidden";
+  };
   setTimeout(() => {
     setProgress(false);
     setSuccess(false);
@@ -630,6 +641,12 @@ const memeDetail = () => {
           <button onClick={handleSubmitYourMeme}>
             Submit Your Meme (Modal)
           </button>
+          <button onClick={handleModalM}>
+            Another modal
+          </button>
+          <button onClick={handleModalC}>
+            Another modal
+          </button>
         </MemeDetailContainer>
       </MemeDetail>
       <Footer />
@@ -638,6 +655,8 @@ const memeDetail = () => {
       {failure ? <Failure /> : null}
       {confirmTransaction ? <ConfirmTransaction /> : null}
       {submitYourMeme ? <SubmitYourMeme /> : null}
+      {modalM ? <ModalM /> : null}
+      {modalC ? <ModalC /> : null}
     </>
   );
 };

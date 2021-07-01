@@ -6,7 +6,6 @@ interface BioProps {
   lordPosition: string;
   lordName: string;
 }
-const MemeLords: FC<BioProps> = (props): JSX.Element => {
   const GcImg = styled.div`
     & img {
       width: 100%;
@@ -53,6 +52,8 @@ const MemeLords: FC<BioProps> = (props): JSX.Element => {
       }
     }
   `;
+const MemeLords: FC<BioProps> = (props): JSX.Element => {
+
   return (
     <HomeGridCard>
       <GcImg>

@@ -9,7 +9,6 @@ interface BioProps {
   memePrice: string;
   memeMarketCap: string;
 }
-const HomeGridCard: FC<BioProps> = (props): JSX.Element => {
   const GcHead = styled.div`
     display: flex;
     align-items: center;
@@ -24,7 +23,6 @@ const HomeGridCard: FC<BioProps> = (props): JSX.Element => {
       width: 9rem;
     }
   `;
-
   const GcImg = styled.div`
     & img {
       width: 100%;
@@ -34,7 +32,6 @@ const HomeGridCard: FC<BioProps> = (props): JSX.Element => {
       aspect-ratio: 1 1;
     }
   `;
-
   const GcFooter = styled.div`
     background-color: #000;
     border-radius: 0 0 1.25rem 1.25rem;
@@ -53,6 +50,8 @@ const HomeGridCard: FC<BioProps> = (props): JSX.Element => {
   const HomeGridCard = styled.div`
   cursor: pointer;
   `
+const HomeGridCardS: FC<BioProps> = (props): JSX.Element => {
+
   return (
     <Link href='/memeDetail'>
       <HomeGridCard>
@@ -76,4 +75,4 @@ const HomeGridCard: FC<BioProps> = (props): JSX.Element => {
   );
 };
 
-export default HomeGridCard;
+export default HomeGridCardS;

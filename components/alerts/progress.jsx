@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 
-const Progress = () => {
   const Progress = styled.div`
     width: 100vw;
     height: 100vh;
@@ -32,6 +31,8 @@ const Progress = () => {
       }
     }
   `;
+const ProgressS = () => {
+
   return (
     <>
       <Progress>
@@ -44,4 +45,4 @@ const Progress = () => {
   );
 };
 
-export default Progress;
+export default ProgressS;

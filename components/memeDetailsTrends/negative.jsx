@@ -2,7 +2,6 @@ import React from "react";
 import { MdArrowDropDown, MdArrowDropUp } from "react-icons/md";
 import styled from "styled-components";
 
-const negative = () => {
   const Negative = styled.div`
     display: flex;
     align-items: center;
@@ -21,6 +20,8 @@ const negative = () => {
       margin: 0;
     }
   `;
+const negative = () => {
+
   return (
     <Negative>
       <MdArrowDropUp />
