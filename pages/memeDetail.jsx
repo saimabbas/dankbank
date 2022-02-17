@@ -11,7 +11,7 @@ import Progress from "../components/alerts/progress";
 import Success from "../components/alerts/success";
 import Failure from "../components/alerts/failure";
 import ConfirmTransaction from "../components/modals/confirmTransaction";
-import SubmitYourMeme from "../components/modals/submitYourMeme";
+// import SubmitYourMeme from "../components/modals/SubmitYourMeme";
 import ModalM from "../components/modals/modalM";
 import ModalC from "../components/modals/modalC";
 import Footer from "../components/footer/footer";
@@ -332,7 +332,7 @@ const memeDetail = () => {
   const [success, setSuccess] = useState(false);
   const [failure, setFailure] = useState(false);
   const [confirmTransaction, SetConfirmTransaction] = useState(false);
-  const [submitYourMeme, setSubmitYourMeme] = useState(false);
+  // const [submitYourMeme, setSubmitYourMeme] = useState(false);
   const [modalM, setModalM] = useState(false);
   const [modalC, setModalC] = useState(false);
   const handleProgress = () => {
@@ -352,10 +352,10 @@ const memeDetail = () => {
     SetConfirmTransaction(true);
     document.body.style.overflow = "hidden";
   };
-  const handleSubmitYourMeme = () => {
-    setSubmitYourMeme(true);
-    document.body.style.overflow = "hidden";
-  };
+  // const handleSubmitYourMeme = () => {
+  // setSubmitYourMeme(true);
+  // document.body.style.overflow = "hidden";
+  // };
   const handleModalM = () => {
     setModalM(true);
     document.body.style.overflow = "hidden";
@@ -369,9 +369,9 @@ const memeDetail = () => {
     setSuccess(false);
     setFailure(false);
     SetConfirmTransaction(false);
-    setSubmitYourMeme(false);
-  }, 10000);
-  
+    // setSubmitYourMeme(false);
+  }, 5000);
+
   return (
     <>
       <Head>
@@ -446,7 +446,7 @@ const memeDetail = () => {
                         <Positive />
                       </div>
                     </MemeDetailsCenter>
-                  
+
                   ) : (
 
                     <MemeDetailsCenter>
@@ -471,7 +471,7 @@ const memeDetail = () => {
                         <Positive />
                       </div>
                     </MemeDetailsCenter>
-                  
+
                   )}
                 </MemeDetailsLeft>
                 {open ? (
@@ -638,9 +638,9 @@ const memeDetail = () => {
           <button onClick={handleConfirmTransaction}>
             Confirm Transaction (Modal)
           </button>
-          <button onClick={handleSubmitYourMeme}>
+          {/* <button onClick={handleSubmitYourMeme}>
             Submit Your Meme (Modal)
-          </button>
+          </button> */}
           <button onClick={handleModalM}>
             Another modal
           </button>
@@ -654,7 +654,7 @@ const memeDetail = () => {
       {success ? <Success /> : null}
       {failure ? <Failure /> : null}
       {confirmTransaction ? <ConfirmTransaction /> : null}
-      {submitYourMeme ? <SubmitYourMeme /> : null}
+      {/* {submitYourMeme ? <SubmitYourMeme /> : null} */}
       {modalM ? <ModalM /> : null}
       {modalC ? <ModalC /> : null}
     </>
